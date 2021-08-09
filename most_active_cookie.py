@@ -35,12 +35,14 @@ class mostActiveCookie(object):
         except:
             print("Unexpected Error: \"{}\" doesn't exist.".format(logFileName))
             sys.exit(1)
-    """
-    Finds the most active cookie(s) and adds them to a list to be printed to stdout
-    """
+            
+    #Finds the most active cookie(s) and adds them to a list to be printed to stdout
     def findMostActiveCookie(self):
         logFileName, targetDate = self.parseCommandLine()               #Get the file name and target date
         activeCookies = self.parseFile(logFileName, targetDate)         #Parse the file and return a counter of all the cookies that were visited on the target date
+        if not activeCookies:
+            print("No active cookies on targetted date.")
+            return   
         cookieVisits = list(activeCookies.values())                     #Create a list of just the number of visits of each cookie
         maxVisits = max(cookieVisits)                                   #Find the max amount of visits
         maxVisitCount = cookieVisits.count(maxVisits)                   #Count the number of cookies that have the amount of max visits

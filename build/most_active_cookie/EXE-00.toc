@@ -43,8 +43,8 @@
   ('most_active_cookie',
    'C:\\Users\\Alex\\Desktop\\Quantcast\\most_active_cookie.py',
    'PYSOURCE'),
-  ('VCRUNTIME140.dll', 'c:\\python\\python39\\VCRUNTIME140.dll', 'BINARY'),
   ('python39.dll', 'c:\\python\\python39\\python39.dll', 'BINARY'),
+  ('VCRUNTIME140.dll', 'c:\\python\\python39\\VCRUNTIME140.dll', 'BINARY'),
   ('_lzma', 'c:\\python\\python39\\DLLs\\_lzma.pyd', 'EXTENSION'),
   ('_bz2', 'c:\\python\\python39\\DLLs\\_bz2.pyd', 'EXTENSION'),
   ('unicodedata', 'c:\\python\\python39\\DLLs\\unicodedata.pyd', 'EXTENSION'),
@@ -78,7 +78,7 @@
  [],
  False,
  False,
- 1628530469,
+ 1628531719,
  [('run.exe',
    'c:\\python\\python39\\lib\\site-packages\\PyInstaller\\bootloader\\Windows-64bit\\run.exe',
    'EXECUTABLE')])
